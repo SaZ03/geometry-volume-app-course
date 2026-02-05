@@ -1,26 +1,26 @@
 import pytest
 from geometry.box import volume_box
 
-def test_volume_box_valid_inputs():
+def test_volumen_caja_entradas_validas():
     """
-    Test volume computation for valid box dimensions.
+    Prueba el cálculo del volumen para dimensiones válidas de una caja.
     """
-    width, height, depth = 2.0, 3.0, 4.0
-    expected = 24.0
-    assert volume_box(width, height, depth) == expected
+    ancho, alto, profundidad = 2.0, 3.0, 4.0
+    esperado = 24.0
+    assert volume_box(ancho, alto, profundidad) == esperado
 
-def test_volume_box_negative_dimension():
+def test_volumen_caja_dimension_negativa():
     """
-    Document current behaviour when a negative dimension is used.
+    Documenta el comportamiento actual cuando se usa una dimensión negativa.
     """
-    width, height, depth = -2.0, 3.0, 4.0
-    expected = -24.0
-    assert volume_box(width, height, depth) == expected
+    ancho, alto, profundidad = -2.0, 3.0, 4.0
+    esperado = -24.0
+    assert volume_box(ancho, alto, profundidad) == esperado
 
-def test_volume_box_float_tolerance():
+def test_volumen_caja_tolerancia_flotante():
     """
-    Test volume computation using approximate comparison.
+    Prueba el cálculo del volumen usando comparación aproximada.
     """
-    width, height, depth = 1.1, 2.2, 3.3
-    expected = width * height * depth
-    assert volume_box(width, height, depth) == pytest.approx(expected, rel=1e-6)
+    ancho, alto, profundidad = 1.1, 2.2, 3.3
+    esperado = ancho * alto * profundidad
+    assert volume_box(ancho, alto, profundidad) == pytest.approx(esperado, rel=1e-6)

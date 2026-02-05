@@ -1,0 +1,2 @@
+Python
+pytest>=7.0
