@@ -1,11 +1,11 @@
 # geometry-volume-app-course
-Simula una calculadora simple de volúmenes de geometría
+El proyecto simula una calculadora simple de volúmenes de geometría
 
 # Descripción del proyecto
-Este proyecto proporciona una colección simple y escalable de funciones en Python para calcular el volumen de formas 3D tales como cajas, conos, cilindros y esferas.
+El proyecto tiene distintas funciones en Python para calcular el volumen de formas 3D como cajas, conos, cilindros y esferas.
 
 # Explicación de la estructura del proyecto
-Los contenidos principales del proyecto incluyen dos carpetas, un archivo main.py y un README.md.
+Los contenidos principales del proyecto son dos carpetas, un archivo main.py, un README.md y el archivo requirements.txt.
 
 La carpeta 'geometry' contiene archivos Python separados para cada forma compatible. Cada archivo contiene la definición de la función utilizada para calcular el volumen de la forma.
 
@@ -15,7 +15,9 @@ Actualmente, los archivos son:
 - cylinder.py
 - sphere.py
 
-La carpeta 'tests' contiene archivos Python separados para cada forma compatible. Cada archivo contiene 3 pruebas unitarias que se realizan en cada función de volumen, verificando el comportamiento de la función.
+Esta carpeta fue originalmente creada en el repositorio [Repositorio](https://github.com/andreshernandezg/geometry-volume-app-course).
+
+La carpeta 'tests' contiene archivos Python separados para cada forma. Cada archivo tiene 3 pruebas que se realizan en cada función de volumen verificando el comportamiento de la función.
 
 Actualmente, los archivos son:
 - test_box.py
