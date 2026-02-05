@@ -15,7 +15,7 @@ Actualmente, los archivos son:
 - cylinder.py
 - sphere.py
 
-Esta carpeta fue originalmente creada en el repositorio [Repositorio](https://github.com/andreshernandezg/geometry-volume-app-course).
+Esta carpeta fue originalmente creada en el siguiente [Repositorio](https://github.com/andreshernandezg/geometry-volume-app-course).
 
 La carpeta 'tests' contiene archivos Python separados para cada forma. Cada archivo tiene 3 pruebas que se realizan en cada función de volumen verificando el comportamiento de la función.
 
