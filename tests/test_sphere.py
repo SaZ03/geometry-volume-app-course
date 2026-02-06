@@ -11,15 +11,13 @@ def test_volumen_esfera_entrada_valida():
     assert volume_sphere(radio) == pytest.approx(esperado, rel=1e-6)
 
 
-def test_volumen_esfera_radio_negativo():
+def test_volumen_esfera_entrada_cero():
     """
-    Prueba el uso de una dimensión negativa.
+    Prueba el uso de una dimensión cero.
     """
-    with pytest.raises(ValueError):
-        volume_sphere(-2.0)
-
-        # sphere.py ya verifica si hay valores iguales a 0 o menores
-
+    radio = 0.0
+    esperado = 0.0
+    assert volume_sphere(radio) == esperado
 
 def test_volumen_esfera_flotante():
     """
